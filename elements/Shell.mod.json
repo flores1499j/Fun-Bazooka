@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "shell",
     "customModelName": "Normal",
-    "name": "Bazookashell",
+    "name": "Shell",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"

@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "Bazookashell",
-      "type": "item",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "bazookashell"
-    },
-    {
       "name": "FunBazooka",
       "type": "tab",
       "sortid": 1,
@@ -74,15 +65,34 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "shellres"
+    },
+    {
+      "name": "Shell",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shell"
+    },
+    {
+      "name": "Shellblock",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "shellblock"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.bazooka.shell": "Shell",
       "item.bazooka.bazooka": "Bazooka",
-      "itemGroup.tabfun_bazooka": "Fun Bazooka",
-      "item.bazooka.bazookashell": "Bazookashell"
+      "block.bazooka.shellblock": "Shellblock",
+      "itemGroup.tabfun_bazooka": "Fun Bazooka"
     }
   },
   "foldersRoot": {

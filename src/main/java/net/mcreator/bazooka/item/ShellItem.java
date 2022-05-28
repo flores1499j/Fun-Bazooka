@@ -12,11 +12,11 @@ import net.minecraft.block.BlockState;
 import net.mcreator.bazooka.BazookaModElements;
 
 @BazookaModElements.ModElement.Tag
-public class BazookashellItem extends BazookaModElements.ModElement {
-	@ObjectHolder("bazooka:bazookashell")
+public class ShellItem extends BazookaModElements.ModElement {
+	@ObjectHolder("bazooka:shell")
 	public static final Item block = null;
-	public BazookashellItem(BazookaModElements instance) {
-		super(instance, 1);
+	public ShellItem(BazookaModElements instance) {
+		super(instance, 5);
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class BazookashellItem extends BazookaModElements.ModElement {
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("bazookashell");
+			setRegistryName("shell");
 		}
 
 		@Override

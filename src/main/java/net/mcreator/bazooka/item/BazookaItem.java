@@ -86,11 +86,11 @@ public class BazookaItem extends BazookaModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ItemStack stack = ShootableItem.getHeldAmmo(entity, e -> e.getItem() == BazookashellItem.block);
+					ItemStack stack = ShootableItem.getHeldAmmo(entity, e -> e.getItem() == ShellItem.block);
 					if (stack == ItemStack.EMPTY) {
 						for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
 							ItemStack teststack = entity.inventory.mainInventory.get(i);
-							if (teststack != null && teststack.getItem() == BazookashellItem.block) {
+							if (teststack != null && teststack.getItem() == ShellItem.block) {
 								stack = teststack;
 								break;
 							}
@@ -102,7 +102,7 @@ public class BazookaItem extends BazookaModElements.ModElement {
 						if (entity.abilities.isCreativeMode) {
 							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
 						} else {
-							if (new ItemStack(BazookashellItem.block).isDamageable()) {
+							if (new ItemStack(ShellItem.block).isDamageable()) {
 								if (stack.attemptDamageItem(1, random, entity)) {
 									stack.shrink(1);
 									stack.setDamage(0);
@@ -147,12 +147,12 @@ public class BazookaItem extends BazookaModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(BazookashellItem.block);
+			return new ItemStack(ShellItem.block);
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return new ItemStack(BazookashellItem.block);
+			return new ItemStack(ShellItem.block);
 		}
 
 		@Override

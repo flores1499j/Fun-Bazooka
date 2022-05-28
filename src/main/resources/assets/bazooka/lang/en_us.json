@@ -1,5 +1,6 @@
 {
+  "item.bazooka.shell": "Shell",
   "item.bazooka.bazooka": "Bazooka",
-  "itemGroup.tabfun_bazooka": "Fun Bazooka",
-  "item.bazooka.bazookashell": "Bazookashell"
+  "block.bazooka.shellblock": "Shellblock",
+  "itemGroup.tabfun_bazooka": "Fun Bazooka"
 }

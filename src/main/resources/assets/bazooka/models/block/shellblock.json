@@ -1,0 +1,8 @@
+{
+  "parent": "bazooka:custom/shell",
+  "textures": {
+    "all": "bazooka:blocks/shell_tex",
+    "particle": "bazooka:blocks/shell_tex",
+    "0": "bazooka:blocks/shell_tex"
+  }
+}
